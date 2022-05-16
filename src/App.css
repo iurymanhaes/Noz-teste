@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+a:-webkit-any-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #ab1680;
+  }
+  *::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff09;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ab1680;
+    border-radius: 30px;
+  }
+  .balloon{
+    display: flex;
+    line-height: 1;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+    border-radius: 4px;
+    width:239px;
+    height: 48px;
+    color: #fff;
+    padding: 5px;
+    position: relative;
+    margin-top: 16px;
+}
+.balloon:after{ 
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.4);
+    top: -5px; 
+    left: 15px;
+}
